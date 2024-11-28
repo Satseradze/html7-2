@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="luka satseradze">
+    <link rel="icon" href="image/icon.svg">
+    <title>myhome</title>
+</head>
+<body>
+    <h1>ბინები</h1>
+
+    <form action="https://www.myhome.ge/s">
+        <label>გარიგების ტიპი:</label>
+        <br/>
+
+        <input type="radio" id="forSale" name="deal_types" value="1">
+        <label for="forSale">იყიდება</label>
+        <br />
+        <input type="radio" id="forRent" name="deal_types" value="2">
+        <label for="forRent">ქირავდება</label>
+        <br />
+        <input type="radio" id="forLease" name="deal_types" value="3">
+        <label for="forLease">გირავდება</label>
+        <br />
+        <br />
+
+        <label>უძრავი ქონების ტიპი:</label>
+        <br />
+
+        <input type="radio" id="apartments" name="real_estate_types" value="1">
+        <label for="apartments">ბინები</label>
+        <br />
+        <input type="radio" id="houses" name="real_estate_types" value="2">
+        <label for="houses">სახლები</label>
+        <br />
+        <input type="radio" id="landPlots" name="real_estate_types" value="4">
+        <label for="landPlots">მიწის ნაკვეთები</label>
+        <br />
+        <br />
+
+        <label>ვალუტა:</label>
+        <br />
+
+        <input type="radio" id="GEL" name="currency_id" value="1">
+        <label for="GEL">ლარი</label>
+        <br />
+        <input type="radio" id="USD" name="currency_id" value="2">
+        <label for="USD">დოლარი</label>
+        <br />
+        <br />
+
+        <label>ფასი (მინიმალური და მაქსიმალური):</label>
+        <br />
+        <input type="number" placeholder="მინ.ფასი" name="price_from" value="">
+        <input type="number" placeholder="მაქს.ფასი" name="price_to" value="">
+        <br />
+        <br />
+
+        <label>ფართი (კვ.მ.)</label>
+        <br />
+        <input type="number" placeholder="" name="area_from" value="">
+        <input type="number" placeholder="" name="area_to" value="">
+        <br />
+        <br />
+
+        <label>ოთახების რაოდენობა</label>
+        <br />
+        <select>
+            <option name="room_types" value="1">1</option>
+            <option name="room_types" value="2">2</option>
+            <option name="room_types" value="3">3</option>
+        </select>
+        <br />
+        <br />
+
+        <label>ქონების სტატუსი:</label>
+        <br />
+        <input type="checkbox" id="newlyBuilt." name="statuses" value="2">
+        <label for="newlyBuilt">ახალი აშენებული</label>
+        <br />
+        <input type="checkbox" id="oldBuilt" name="statuses" value="1">
+        <label for="oldBuilt">ძველი აშენებული</label>
+        <br />
+        <input type="checkbox" id="builder" name="statuses" value="3">
+        <label for="builder">მშენებარე</label>
+        <br />
+        <br />
+
+        <input type="submit" value="ძებნა">
+    </form>
+</body>
+</html>
